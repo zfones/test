@@ -12,7 +12,7 @@
             padding: 20px;
             background-color: #f0f0f0;
         }
-        h1 {
+        h1, h2 {
             color: #333;
             text-align: center;
             border-bottom: 2px solid #333;
@@ -23,10 +23,47 @@
             line-height: 1.6;
             font-size: 18px;
         }
+        section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .contact-form {
+            display: grid;
+            gap: 10px;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
     </style>
 </head>
 <body>
     <h1>Welcome to Our Page</h1>
-    <p>This is a simple welcome page that we'll enhance later.</p>
+    <p>This is our beautiful webpage with enhanced content and styling.</p>
+    
+    <section>
+        <h2>About Us</h2>
+        <p>We are a passionate team dedicated to creating amazing web experiences. Our goal is to deliver high-quality content and design that engages and delights our visitors.</p>
+    </section>
+
+    <section>
+        <h2>Our Services</h2>
+        <p>We offer a wide range of services including web design, development, and content creation. Each project is crafted with attention to detail and a focus on user experience.</p>
+    </section>
+
+    <section>
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message" rows="4"></textarea>
+            <button>Send Message</button>
+        </div>
+    </section>
 </body>
 </html>
